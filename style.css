@@ -1,0 +1,126 @@
+/* Reset styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+@media (max-width: 400px) {
+    body {
+        background-image: url(./order-summary-component-main/images/pattern-background-mobile.svg);
+    }
+}
+
+/* CSS variables */
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid crimson; */
+    /* min(), max(), clam() */
+    max-width: min(90vw, 300px);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.image-holder {
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+article {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+article h1 {
+    margin-bottom: 0.8rem;
+    color: var(--Dark-blue);
+}
+
+article p {
+    color: var(--Desaturated-blue);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.annual-payment {
+    display: flex;
+    align-items: center;
+    margin-block: 1.5rem;
+    background-color: #f8f9fe;
+    border-radius: 0.5em;
+    padding: 10px 10px;
+}
+
+.annual-payment h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+.annual-payment p {
+    color: var(--Desaturated-blue);
+
+}
+
+.annual-payment a {
+    color: var(--bright-blue);
+    margin-left: auto;
+
+}
+
+.annual-payment p,
+.annual-payment a {
+    font-size: 0.8rem;
+}
+
+.annual-payment img {
+    margin-right: 5%;
+}
+
+button {
+    width: 100%;
+    margin-block: 0.5rem;
+}
+
+.payment {
+    color: #fff;
+    background-color: var(--bright-blue);
+    border: none;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    box-shadow: 0 10px 10px 0 #dedbf8;
+}
+
+.cancel {
+    border: none;
+    background-color: #ffffff;
+    color: var(--Desaturated-blue);
+
+}
